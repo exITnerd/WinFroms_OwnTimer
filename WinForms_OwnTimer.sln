@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinForms_OwnTimer", "WinForms_OwnTimer.csproj", "{B2CC72A1-E8AB-47E9-A4D3-A5BE0F413DCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2CC72A1-E8AB-47E9-A4D3-A5BE0F413DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2CC72A1-E8AB-47E9-A4D3-A5BE0F413DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2CC72A1-E8AB-47E9-A4D3-A5BE0F413DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2CC72A1-E8AB-47E9-A4D3-A5BE0F413DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C98FB1D-7A11-463B-84B7-2E7563AFD97D}
+	EndGlobalSection
+EndGlobal
