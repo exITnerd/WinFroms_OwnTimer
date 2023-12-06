@@ -37,6 +37,7 @@ namespace WinForms_OwnTimer
                 else if (h == 24) {
                     myTimer.Stop();
                     MessageBox.Show("Are you there? Whole day elapsed, stopping timer!");
+                    this.Close();
                 }
 
                 labelTime.Text = $"{h:00}:{m:00}:{s:00}:{ms:000}";
@@ -84,42 +85,6 @@ namespace WinForms_OwnTimer
             else
             {
                 action.Invoke();
-            }
-        }
-    }
-
-    public class MyTimer
-    {
-        private System.Threading.Timer timer;
-        private int interval;
-
-        public event EventHandler TimeElapsed;
-        public event EventHandler OnError;
-
-        public MyTimer(int interval)
-        {
-            this.interval = interval;
-        }
-
-        public void Start()
-        {
-            timer = new System.Threading.Timer(TimerCallback, null, 0, interval);
-        }
-
-        public void Stop()
-        {
-            timer?.Change(Timeout.Infinite, Timeout.Infinite);
-        }
-
-        private void TimerCallback(object state)
-        {
-            try
-            {
-                TimeElapsed?.Invoke(this, EventArgs.Empty);
-            }
-            catch (Exception)
-            {
-                OnError?.Invoke(this, EventArgs.Empty);
             }
         }
     }
